@@ -1,3 +1,3 @@
 <?php
-	exec("sudo -u pi screen -X -s radio quit");
+	exec("sudo -u $USER screen -X -s radio quit");
 ?>

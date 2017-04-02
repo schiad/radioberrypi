@@ -8,26 +8,27 @@
 	<BODY>
 		<H3 align="center"> Radio controller. </H3>
 		<?php
+			$USER = "salim";
 			if (isset($_GET["action"])) {
 				switch ($_GET['action']) {
 					case 'INTER':
 						include 'shutdown.php';
-						exec("sudo -u pi screen -fn -dmS radio mplayer http://direct.franceinter.fr/live/franceinter-midfi.mp3");
+						exec("sudo -u $USER screen -fn -dmS radio mplayer http://direct.franceinter.fr/live/franceinter-midfi.mp3");
 						echo "<P>Lancement de la radio France Inter.</P>";
 						break;
 					case 'CULTURE':
 						include 'shutdown.php';
-						exec("sudo -u pi screen -fn -dmS radio mplayer http://direct.franceculture.fr/live/franceculture-midfi.mp3");
+						exec("sudo -u $USER screen -fn -dmS radio mplayer http://direct.franceculture.fr/live/franceculture-midfi.mp3");
 						echo "<P>Lancement de la radio France Culture.</P>";
 						break;
 					case 'RTL':
 						include 'shutdown.php';
-						exec("sudo -u pi screen -fn -dmS radio mplayer  http://streaming.radio.rtl.fr/rtl-1-48-192");
+						exec("sudo -u $USER screen -fn -dmS radio mplayer  http://streaming.radio.rtl.fr/rtl-1-48-192");
 						echo "<P>Lancement de la radio RTL.</P>";
 						break;
 					case 'INFO':
 						include 'shutdown.php';
-						exec("sudo -u pi screen -fn -dmS radio mplayer http://direct.franceinfo.fr/live/franceinfo-midfi.mp3");
+						exec("sudo -u $USER screen -fn -dmS radio mplayer http://direct.franceinfo.fr/live/franceinfo-midfi.mp3");
 						echo "<P>Lancement de la radio France Info.</P>";
 						break;
 					case 'SHUTDOWN':
