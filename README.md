@@ -14,11 +14,10 @@ open your web navigator goto http://localhost/radioberrypi <br>
 Enjoy <br>
 
 ## Future features
-
-[x] Working radio.
-[ ] Integrate radio stations in SQL database.
-[ ] Make a new interface with radio station management.
-[ ] Make responsive and cool interface.
+- [x] Working radio.
+- [ ] Integrate radio stations in SQL database.
+- [ ] Make a new interface with radio station management.
+- [ ] Make responsive and cool interface.
 Any help is welcome.
 
 Soon more radio stations.
